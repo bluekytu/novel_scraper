@@ -1,5 +1,5 @@
 from distutils.command.install_lib import PYTHON_SOURCE_EXTENSION
-import mysql.connector;
+import mysql.connector
 from scrapechapter import getTitleOfBook
 from scrapechapter import getBlurbofBook
 from scrapechapter import saveImageOfBook
