@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="../CSS/archive-css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Main Archive</title>
+</head>
+
+<body class="main-body">
+	<script>
+	$(function() {
+		$.ajax({
+			url: "../../NOVEL_BLURBS/Ancient%20Strengthening%20Technique%20BLURB.txt",
+			async: true,
+			dataType: "text",
+			success: function(data, textStatus, jqxhr) {
+				var resourceContent = data;
+				document.getElementById("ancientstrengtheningtechniqueblurb").innerHTML = resourceContent;
+				console.log(resourceContent)
+			}
+		})
+	})
+
+	</script>
+	<table id="main-content">
+		<tr>
+			<td>
+				<div class="container">
+                    <img src="../../NOVEL_THUMBNAILS/Library%20of%20Heaven’s%20Path.png">
+					<div class="overlay">
+						<p id="libraryofheavenspathblurb"> </p>
+					</div>
+				</div>
+			</td>
+			<td>
+                <div class="container">
+                <img src="../../NOVEL_THUMBNAILS/Ancient%20Strengthening%20Technique.png" class="image">
+				<div class="image__overlay">
+                    					<p id="ancientstrengtheningtechniqueblurb"> </p>
+
+				</div>
+                </div>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Library of Heaven's Path</td>
+			<td>Ancient Strengthening Technique</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+
+</html>

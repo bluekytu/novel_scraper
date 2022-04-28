@@ -1,0 +1,109 @@
+
+li a {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: gray;
+}
+body {
+    margin: 0px;
+}
+.active {
+    background-color: green;
+}
+.maintext {
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s; /* Firefox < 16 */
+     -ms-animation: fadein 5s; /* Internet Explorer */
+      -o-animation: fadein 5s; /* Opera < 12.1 */
+         animation: fadein 5s;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: white;
+}
+.btn {
+position: absolute;
+        top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+#access-archive {
+      position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: white;
+    display: block;
+    border: 1px solid black;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/**
+* Animations Below
+*
+*/
+
+.instructions {
+    -webkit-animation: fadein 25s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 25s; /* Firefox < 16 */
+     -ms-animation: fadein 25s; /* Internet Explorer */
+      -o-animation: fadein 25s; /* Opera < 12.1 */
+         animation: fadein 25s;
+         text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: white;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
