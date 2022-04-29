@@ -1,3 +1,4 @@
+import json
 from flask import Flask
 from flask import request
 
@@ -10,3 +11,10 @@ app = Flask(__name__)
 def hello_world():
     if request.method == "POST":
         return "<p>ASD World</p>"
+
+
+@app.route("/receiveNovelTitle", methods=["POST"])
+def novelTitleRequest():
+    if request.method == "POST":
+        data = json.loads(request.data)
+        return data
