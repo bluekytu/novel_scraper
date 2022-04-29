@@ -1,16 +1,14 @@
 import Textbox from "./Components/TextBox.js";
 import "./CSS/App.css"
 function App() {
-  const AddNovel = () => {
-    console.log("Submitted")
+  const novelNameSubmitted = (novelTitle) => {
+    console.log(novelTitle)
   }
   return (
     <div className="App">
-  
-
       <div className="flex h-screen">
         <div className="m-auto">
-          {<Textbox onAdd={AddNovel()} />}
+          <Textbox  onSubmitNovelName={e => {novelNameSubmitted()}}/>
         </div>
       </div>
     </div>
