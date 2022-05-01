@@ -1,8 +1,6 @@
 import Textbox from "./Components/TextBox.js";
-import { useNavigate } from 'react-router-dom'
 import "./CSS/App.css"
 function App() {
-  let navigate = useNavigate()
   const novelNameSubmitted = async (novelTitle) => {
     const requestOptions = {
       mode: 'no-cors',
@@ -15,12 +13,7 @@ function App() {
       .then(res => {
         console.log("request sent!")
       })
-    let path = `./NovelPage.js`
-    navigate(path, {
-      state: {
-        novelTitle
-      }
-    })
+
 
   }
 

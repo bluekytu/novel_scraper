@@ -1,16 +1,14 @@
-import { useLocation } from "react-router-dom";
 
 
-function novelPage() {
+function NovelPage() {
 
-    const params = useLocation()
 
 
     return (
 
         <div>
-            welcome {params}
+            welcome dawg
         </div>
     )
 }
-export default novelPage;
+export default NovelPage;
