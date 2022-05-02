@@ -1,5 +1,7 @@
 import Textbox from "./Components/TextBox.js";
 import "./CSS/App.css"
+import NovelPage from "./NovelPage.js";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   const novelNameSubmitted = async (novelTitle) => {
     const requestOptions = {
@@ -18,13 +20,24 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="flex h-screen">
-        <div className="m-auto">
-          {<Textbox onSubmitNovelName={(value) => novelNameSubmitted(value)} />}
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/novel" element={<NovelPage />} />
+      </Routes>
+      <div className="App">
+
+        <div className="flex h-screen">
+          <div className="m-auto">
+
+            <Routes>
+              <Route path="/" element={<Textbox onSubmitNovelName={(value) => novelNameSubmitted(value)} />} />
+            </Routes>
+          </div>
         </div>
       </div>
-    </div>
+
+    </BrowserRouter>
   );
 }
 

@@ -8,7 +8,6 @@ import requests as request
 from scrapechapter import getTitleOfBook
 from scrapechapter import getBlurbofBook
 from scrapechapter import saveBlurb
-import wget as wget
 
 scraper = cloudscraper.create_scraper()
 baseUrl = "https://novelfull.com/"
