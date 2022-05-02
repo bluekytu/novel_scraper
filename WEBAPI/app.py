@@ -16,8 +16,9 @@ def hello_world():
 
 @app.route("/receiveNovelTitle", methods=["POST"])
 def novelTitleRequest():
-    data = json.loads(request.data)
-    return data
+    if request.method == "POST":
+        data = json.loads(request.data)
+        return data
 
 
 @app.route("fetchImage/<novelName>", methods=["POST"])
