@@ -1,7 +1,8 @@
 import json
 from flask import Flask
 from flask import request
-
+from regex import D
+import requests
 
 app = Flask(__name__)
 
@@ -15,11 +16,9 @@ def hello_world():
 
 
 @app.route("/receiveNovelTitle", methods=["POST"])
-def novelTitleRequest():
-    if request.method == "POST":
-        data = json.loads(request.data)
-        return data
-
-
-@app.route("fetchImage/<novelName>", methods=["POST"])
+@app.route("/fetchImage/<novelName>", methods=["POST"])
 def fetchImage(novelName):
+    req = requests.post(f"http://127.0.0.1:223/getNovel/{novelName}")
+    data = req.json()
+
+    return data["thumbnail_name"]
