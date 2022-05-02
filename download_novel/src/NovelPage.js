@@ -1,13 +1,17 @@
 
 
-function NovelPage() {
+let NovelPage = () => {
 
 
 
     return (
 
-        <div>
-            welcome dawg
+        <div className='flex h-screen' style={{ color: "white", backgroundColor: "black" }}>
+            <div className='m-auto'>
+
+                center
+            </div>
+
         </div>
     )
 }

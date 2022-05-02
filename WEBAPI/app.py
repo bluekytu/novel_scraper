@@ -2,6 +2,7 @@ import json
 from flask import Flask
 from flask import request
 
+
 app = Flask(__name__)
 
 
@@ -15,6 +16,9 @@ def hello_world():
 
 @app.route("/receiveNovelTitle", methods=["POST"])
 def novelTitleRequest():
-    if request.method == "POST":
-        data = json.loads(request.data)
-        return data
+    data = json.loads(request.data)
+    return data
+
+
+@app.route("fetchImage/<novelName>", methods=["POST"])
+def fetchImage(novelName):
