@@ -1,6 +1,7 @@
+import ThumbnailGet from "./Components/ThumbnailGet.js";
 
 
-let NovelPage = () => {
+let NovelPage = ({novelName}) => {
 
 
 
@@ -8,8 +9,8 @@ let NovelPage = () => {
 
         <div className='flex h-screen' style={{ color: "white", backgroundColor: "black" }}>
             <div className='m-auto'>
-
-                center
+                BIVEKASDA
+                <ThumbnailGet novelName={novelName} />
             </div>
 
         </div>
